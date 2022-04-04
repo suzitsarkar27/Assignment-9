@@ -1,0 +1,10 @@
+.menu-style{
+    color: white;
+    text-decoration: none;
+    margin-left:36px;
+    font-size: 18px;
+}
+.menu-style:hover{
+    border-bottom: 3px solid white;
+    color:orangered;
+}
