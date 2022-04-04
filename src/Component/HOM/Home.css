@@ -1,9 +1,17 @@
 .product-infro{
-    margin-top: 200px;
-    font-size: 18px;
+    margin-top:150px;
+}
+.product-infro h6{
+font-size: 18px;
 }
 .btn-style{
     text-align: center;
     padding: 10px 50px;
     border-radius: 20px;
+    margin-top: 10px;
+    margin-right: 40px;
+    background-color: green;
+}
+.btn-style:hover{
+    background-color: orange;
 }
