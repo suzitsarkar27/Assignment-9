@@ -1,9 +1,10 @@
 import React from "react";
+import Cheat from "../MyCheat/Cheat";
 
 const Dadhbord = () => {
   return (
-    <div>
-      <h2>this is dashbord</h2>
+    <div className="mt-5">
+      <Cheat></Cheat>
     </div>
   );
 };

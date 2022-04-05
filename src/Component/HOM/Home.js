@@ -1,8 +1,7 @@
-import React, { useState } from "react";
 import logo from "..//..//imgse/71IyteItZhL._AC_SL1500_.jpg";
 import Costomar from "../Costomar/Costomar";
 import useCostomarReviw from "../Hooks/useCostomarReviw";
-import Revews from "../Revews/Revews";
+
 import "./Home.css";
 const Home = () => {
   const [data, setData] = useCostomarReviw([]);
