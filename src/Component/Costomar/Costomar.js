@@ -1,17 +1,21 @@
 import React from "react";
 import "./Coustomar.css";
-
+import { FaStar } from "react-icons/fa";
 const Costomar = ({ data }) => {
-  console.log(data);
   const { img, name, Ranting, descripton } = data;
   return (
-    <div className="col-md-4 card reveiw-infro">
-      <div className="review-infro">
-        <img className="w-50" src={img} alt="" />
-        <h3>{name}</h3>
-        <h3>{Ranting}</h3>
-        <p>{descripton}</p>
-      </div>
+    <div className="reveiw-infro col-md-4 card g-3">
+      <img className="w-50" src={img} alt="" />
+      <h3>{name}</h3>
+      <p>
+        <FaStar className="icon-style"></FaStar>
+        <FaStar className="icon-style"></FaStar>
+        <FaStar className="icon-style"></FaStar>
+        <FaStar className="icon-style"></FaStar>
+        <FaStar className="icon-style"></FaStar>
+      </p>
+      <h3>{Ranting}</h3>
+      <p>{descripton}</p>
     </div>
   );
 };

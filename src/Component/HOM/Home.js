@@ -28,8 +28,8 @@ const Home = () => {
           <img className="w-75  mt-5" src={logo} alt="" />
         </div>
       </div>
-      <div className="row mt-5">
-        <h2 className="text-center">
+      <div className=" mt-5 row m-5">
+        <h2 className="text-center coustomar-container ">
           Coustomar<span className="text-danger"> Reviews</span>
         </h2>
         {data.map((data) => (
