@@ -35,6 +35,9 @@ const Home = () => {
           <Costomar data={data}></Costomar>
         ))}
       </div>
+      <div className="text-center">
+        <button className="btn-style">SEE ALL</button>
+      </div>
     </div>
   );
 };
