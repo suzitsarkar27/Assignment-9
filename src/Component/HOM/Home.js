@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "..//..//imgse/71IyteItZhL._AC_SL1500_.jpg";
 import Costomar from "../Costomar/Costomar";
 import useCostomarReviw from "../Hooks/useCostomarReviw";
@@ -6,7 +7,7 @@ import "./Home.css";
 const Home = () => {
   const [data, setData] = useCostomarReviw([]);
   let array = data.slice(0, 3);
-  console.log(data);
+
   return (
     <div>
       <div className="row">
@@ -33,11 +34,14 @@ const Home = () => {
           Coustomar<span className="text-danger"> Reviews</span>
         </h2>
         {array.map((data) => (
-          <Costomar data={data}></Costomar>
+          <Costomar key={data.id} data={data}></Costomar>
         ))}
       </div>
       <div className="text-center">
-        <button className="btn-style">SEE ALL</button>
+        <Link className=" menu-style" to={"/revews"}>
+          {" "}
+          <button className="btn-style">SEE ALL</button>
+        </Link>
       </div>
     </div>
   );
