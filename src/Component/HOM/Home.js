@@ -5,6 +5,7 @@ import useCostomarReviw from "../Hooks/useCostomarReviw";
 import "./Home.css";
 const Home = () => {
   const [data, setData] = useCostomarReviw([]);
+  let array = data.slice(0, 3);
   console.log(data);
   return (
     <div>
@@ -31,7 +32,7 @@ const Home = () => {
         <h2 className="text-center coustomar-container ">
           Coustomar<span className="text-danger"> Reviews</span>
         </h2>
-        {data.map((data) => (
+        {array.map((data) => (
           <Costomar data={data}></Costomar>
         ))}
       </div>
